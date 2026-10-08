@@ -6,8 +6,8 @@ app.use(cors());
 app.use(express.json());
 
 // 1. GET - Salud del sistema
-app.get('/api/health', (req, res) => {
-  res.status(200).json({ status: 'en vivo', timestamp: new Date().toISOString(), uptime: `${Math.floor(process.uptime())}s` });
+app.get('/api/health', (req, res) => { 
+  res.status(200).json({ status: 'en vivo 334', timestamp: new Date().toISOString(), uptime: `${Math.floor(process.uptime())}s` });
 });
 
 // 2. GET - Estado del sistema

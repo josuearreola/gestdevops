@@ -21,7 +21,7 @@ describe('=== PRUEBAS UNITARIAS DE CASOS EXITOSOS (HAPPY PATH) ===', () => {
     const data = await res.json();
 
     assert.strictEqual(res.status, 200);
-    assert.strictEqual(data.status, 'en vivo');
+    assert.strictEqual(data.status, 'en vivo 334');
     assert.ok(data.timestamp);
     assert.ok(data.uptime);
   });
