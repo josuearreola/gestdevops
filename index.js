@@ -7,7 +7,7 @@ app.use(express.json());
 
 // 1. GET - Salud del sistema
 app.get('/api/health', (req, res) => {
-  res.status(200).json({ status: 'en vivo v2', timestamp: new Date().toISOString(), uptime: `${Math.floor(process.uptime())}s` });
+  res.status(200).json({ status: 'en vivo', timestamp: new Date().toISOString(), uptime: `${Math.floor(process.uptime())}s` });
 });
 
 // 2. GET - Estado del sistema
